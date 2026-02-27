@@ -16,14 +16,14 @@ def load_clean_data(file_path):
     return df
 
 
-df_movies = load_clean_data("../raw/movies.csv")
+df_movies = load_clean_data("raw/movies.csv")
 
-df_movies.to_csv("../processed/cleaned_movies.csv", index=False)
+df_movies.to_csv("processed/cleaned_movies.csv", index=False)
 
 
-df_ratings = load_clean_data("../raw/ratings.csv")
+df_ratings = load_clean_data("raw/ratings.csv")
 
-df_ratings.to_csv("../processed/cleaned_ratings.csv", index=False)
+df_ratings.to_csv("processed/cleaned_ratings.csv", index=False)
 
 df_ratings = df_ratings.drop(columns=["timestamp"])
 
